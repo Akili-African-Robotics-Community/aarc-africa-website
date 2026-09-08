@@ -17,19 +17,33 @@ const upcoming: Array<{
   registerUrl?: string;
 }> = [
   {
-    number: "Webinar 02",
-    title: "Speaker & topic to be announced",
-    speaker: "Speaker TBC",
-    date: "29 July 2026",
-    time: "16:00 SAST",
+    number: "Webinar 03",
+    title: "Aerial Autonomy in the Field: Perception, Persistence, and Control",
+    speaker: "Dr. Melissa Greeff",
+    affiliation: "Vector Institute for Artificial Intelligence",
+    date: "Tuesday, 29 September 2026",
+    time: "17:00 SAST \u00b7 11:00 ET",
     blurb:
-      "Our next webinar is being finalised. We're lining up another leading voice in African robotics to share their research and perspective on where the field is heading. Speaker and topic details will be announced soon — save the date and check back for the full lineup.",
-    tags: ["To Be Announced"],
-    photo: null,
+      "Aerial robots have the potential to transform infrastructure inspection, emergency response, and operations in remote or hazardous environments. But realising that potential requires autonomy that stays reliable beyond the laboratory, despite tight sensing, computation, communication, and energy constraints. Dr Greeff will present three applications motivating her research: building-envelope inspection, UAV-assisted search and rescue, and aerial imagery for zero-shot, GNSS-denied ground-vehicle navigation, showing how aerial robots serve both as autonomous platforms and as enablers of other robotic systems. She will then highlight two technology directions: autonomous landing on moving surface vessels, and CUDA MPC, a GPU-native solver for high-rate, long-horizon control. Together these projects aim to advance aerial robots that can operate where autonomy is hardest: over open water, in wind, and beyond reliable GNSS coverage. Dr Greeff is an Assistant Professor in Electrical and Computer Engineering and a faculty affiliate with the Vector Institute for Artificial Intelligence, working on aerial robots, vision-based navigation, and safe learning-based control. She holds a BASc in Engineering Science and a PhD from the University of Toronto.",
+    tags: ["Aerial Robotics", "Vision-Based Navigation", "Safe Learning Control", "UAV"],
+    photo: "/images/people/melissa_greeff.jpg",
+    registerUrl: "https://forms.gle/eQD4FdhFec28ZMkh6",
   },
 ];
 
 const past = [
+  {
+    number: "Webinar 02",
+    title: "Control as Inference, Inference by Architecture",
+    speaker: "Dr. Michael Burke",
+    date: "25 August 2026",
+    time: "13:00 SAST/CAT \u00b7 14:00 EAT",
+    blurb:
+      "As robot learning moves toward large pre-trained Vision-Language-Action (VLA) models, the central challenge is shifting from engineering explicit inductive biases to discovering and controlling the implicit structures inherited from architectures, datasets, and objectives. In this talk, Dr Burke argued that control theory provides a natural language for analysing these learned policies, treating the science of robotics as \u201csystem identification\u201d for deep controllers. Using core principles such as observability, excitation, and stability, the session explored how we can better understand the transformation of information into behaviour, with key takeaways from his work on physical latent spaces, structured demonstration learning, and switching latent feedback controllers. Dr Burke is a Senior Lecturer in Robotics and AI at Monash University in Melbourne, Australia, and an Honorary Fellow at the University of Edinburgh, with a PhD in Statistical Signal Processing from the University of Cambridge, an MSc from Stellenbosch University, and a BEng from the University of Pretoria.",
+    tags: ["Robot Learning", "Control Theory", "VLA Models", "Latent Spaces"],
+    photo: "/images/people/michael_burke.png" as string | null,
+    recordingUrl: "https://www.youtube.com/watch?v=QX8xKkAiONE" as string | null,
+  },
   {
     number: "Webinar 01",
     title: "Studying Cheetahs Through the Lens of Robotics: An African Perspective",
